@@ -1,0 +1,249 @@
+/* test */
+.testCell {
+	box-sizing: border-box;
+	background-color: #BDBDBD;
+	height: 200px;
+	padding-left: 8px;
+	padding-top: 4px;
+	color: white;
+}
+
+.bremenCell > .mdl-card__title{
+	color: #fff;
+	background: url('../images/hbNeustadtBHF.jpg') center no-repeat;
+	height:250px;
+}
+
+.ddorfCell > .mdl-card__title{
+	color: #000;
+	background: url('../images/fhd.jpg') no-repeat;
+	background-position: 10% 50%;
+	height:150px;
+}
+.ddorfCell > .mdl-card__actions {
+	height: 60px;
+	padding: 10px;
+	display: flex;
+	box-sizing: border-box;
+	align-items: center;
+	font-size: 2rem;
+}
+
+
+/*for 800px screen*/
+@media (max-width: 840px) {
+		.basicPage {
+			padding-top: 15px;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		width: 100%;
+		margin: 0 auto;
+		-webkit-flex-shrink: 0;
+		-ms-flex-negative: 0;
+		flex-shrink: 0;
+	}
+}
+
+/*for larger screen than 800*/
+@media (min-width: 840px) {
+	.basicPage {
+		max-width: 820px;
+		padding: 10px;
+		padding-top: 15px;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		width: 100%;
+		margin: 0 auto;
+		-webkit-flex-shrink: 0;
+		-ms-flex-negative: 0;
+		flex-shrink: 0;
+	}
+}
+
+/*for larger screen than 800*/
+@media (min-width: 1080px) {
+	.basicPage {
+		max-width: 960px;
+		padding: 50px;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		width: 100%;
+		margin: 0 auto;
+		-webkit-flex-shrink: 0;
+		-ms-flex-negative: 0;
+		flex-shrink: 0;
+	}
+}
+
+
+/*fab bzw icon position*/
+.fab-middle-action-right {
+	position: absolute;
+	bottom: 5px;
+	right: 28px;
+	transform: translate(0px, -28px);
+	z-index: 900;
+}
+
+/*daReal*/
+body::before {
+
+	background-color: #FFFFFF;
+	background-image: linear-gradient(to bottom, #455A64, #CFD8DC);
+	background-size: cover;
+	background-attachment: fixed;
+	content: '';
+	will-change: transform;
+	z-index: -1;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	position: fixed;
+}
+
+
+/*DevIcon*/
+.devIconClass{
+	font-family: "devicons";
+	color: #607D8B;
+}
+.devIconClass:before{
+	content:"\e604";
+}
+
+/*contactSocial*/
+ul {
+	overflow: auto;
+}
+
+ul li {
+	list-style-type: none;
+	float: left;
+	padding-right: 4px;
+}
+
+ul li a i {
+	color: #607D8B;
+}
+
+/*Cards*/
+.contactCard {
+	width: 45%;
+	height: auto;
+	z-index: 2;
+	overflow: visible;
+}
+
+.contactCard > .mdl-card__actions {
+	height: 60px;
+	padding: 10px;
+	display: flex;
+	box-sizing: border-box;
+	align-items: center;
+	font-size: 2rem;
+	color: #607D8B;
+
+}
+
+.contactCard-title {
+	background: #455A64; 
+	color: #FEFEFE;
+}
+
+.fab-top-right {
+	position: absolute;
+	top: 0px;
+	right: 28px;
+	transform: translate(0px, -28px);
+	z-index: 900;
+}
+
+
+/*ImageCard*/
+.card-image.mdl-card {
+	background: url('../images/potrait_big.jpg') center / cover;
+}
+.card-image > .mdl-card__actions {
+	height: 52px;
+	padding: 16px;
+	background: rgba(0, 0, 0, 0.2);
+}
+.card-image__filename {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+/*UnityCard*/
+.unityCard.mdl-card {
+}
+
+.unityCard > .mdl-card__title {
+	height: 176px;
+	background: url('../images/unity-logo-white.png') center no-repeat #00cacd;
+	background-size: 90%;
+	color: black;
+}
+.unityCard > .mdl-card__supporting-text {
+	height: 90px;
+}
+
+.unityCard > .mdl-card__actions {
+	height: 60px;
+	padding: 10px;
+	display: flex;
+	box-sizing: border-box;
+	align-items: center;
+	font-size: 1.5rem
+}
+
+
+/*AndroidCard*/
+.androidCard > .mdl-card__title {
+	height: 176px;
+	background: url('../images/Android_Robot_outlined.svg') center no-repeat #A4C639;
+	background-size: 90%;
+	color: black;
+	font-weight: bolder;
+}
+
+.androidCard > .mdl-card__supporting-text {
+	height: 90px;
+}
+
+.androidCard > .mdl-card__actions {
+	height: 60px;
+	padding: 10px;
+	display: flex;
+	box-sizing: border-box;
+	align-items: center;
+	font-size: 2rem;
+}
+
+/*iOS Card*/
+.iOSCard > .mdl-card__title {
+	height: 176px;
+	background: url('../images/swift_logo.png') center no-repeat;
+	background-size: 40%;
+	background-color: #FB9C44;
+}
+
+.iOSCard > .mdl-card__supporting-text {
+	height: 90px;
+}
+
+.iOSCard > .mdl-card__actions {
+	height: 60px;
+	padding: 10px;
+	display: flex;
+	box-sizing: border-box;
+	align-items: center;
+	font-size: 2rem;
+}
