@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!-- Private Webpage
 Copyright 2015 Arthur Glomb.
@@ -47,14 +48,27 @@ Copyright 2015 Arthur Glomb.
 	<link href='http://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
 	<!--fotnawesome --> 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<!-- TESTSKRIPT --> 
+	<!-- jquery -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<!-- fancybox -->
+	<script type="text/javascript" src="assets/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+	<link rel="stylesheet" href="assets/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="assets/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+	<link rel="stylesheet" href="assets/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="assets/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+	<script type="text/javascript" src="assets/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+	<link rel="stylesheet" href="assets/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+	<script type="text/javascript" src="assets/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+	<!-- AdmSkripts --> 
+	<script type="text/javascript" src="assets/js/fancybox-portfolio.js"></script>
 	<script type="text/javascript" src="assets/js/getHigh.js"></script>
 	<!-- google analytics -->
 	<script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
 	ga('create', 'UA-45393244-2', 'auto');
 	ga('send', 'pageview');
@@ -87,32 +101,32 @@ Copyright 2015 Arthur Glomb.
 						<h4 class="mdl-card__title-text">About</h4>
 					</div>
 					<div class="mdl-card__supporting-text">
-						I'm Arthur. Living in Bremen and currently working on my Masters Degree at the University of Applied Sciences Düsseldorf. <br>
-						This page is work in progress. So feel free to contact me in the meantime on social network or via mail.
+						I'm Arthur. Living in Bremen and currently working on my Masters Degree at the University of Applied Sciences Düsseldorf. I'm looking for a final thesis topic in mobile media. <br>
+						This page is a work in progress. So feel free to contact me on social network or via mail.
 					</div>
 					<div class="mdl-card__actions mdl-card--border">
 						<div class="mdl-layout-spacer"></div>
 						<ul>
 							<li>
 								<a target="_blank" href="https://www.xing.com/profile/Arthur_Glomb">
-									<button class="mdl-button mdl-js-button mdl-button--icon">
+									<span class="mdl-button mdl-js-button mdl-button--icon">
 										<i class="fa fa-xing"></i>
-									</button>
+									</span>
 								</a>
 							</li>
 							<li>
-								<button class="mdl-button mdl-js-button mdl-button--icon">
+								<span class="mdl-button mdl-js-button mdl-button--icon">
 									<a target="_blank" href="http://www.twitter.com/a2hur">
 										<i class="fa fa-twitter"></i>
 									</a>
-								</button>
+								</span>
 							</li>
 							<li>
-								<button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored">
+								<span class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored">
 									<a target="_blank" href="https://www.facebook.com/a2hur">
 										<i class="fa fa-facebook"></i>
 									</a>
-								</button>
+								</span>
 							</li>
 
 						</ul>
@@ -130,7 +144,7 @@ Copyright 2015 Arthur Glomb.
 						In App Model Creation with Autodesk Maya and 3DS Max.
 					</div>
 					<div class="mdl-card__actions mdl-card--border">
-						<a class="mdl-button mdl-button--colored mdl-button--raised mdl-js-button mdl-js-ripple-effect" disabled>
+						<a class="mdl-button mdl-button--colored mdl-button--raised mdl-js-button mdl-js-ripple-effect" id="fancybox-unity">
 							my Unity Apps
 						</a>
 						<div class="mdl-layout-spacer"></div>
@@ -144,7 +158,7 @@ Copyright 2015 Arthur Glomb.
 					<div class="mdl-card__supporting-text" id="variHeight">Used to implement Android Apps the native way with Java.<br>
 					</div>
 					<div class="mdl-card__actions mdl-card--border">
-						<a class="mdl-button mdl-button--colored mdl-button--raised mdl-js-button mdl-js-ripple-effect" disabled>
+						<a class="mdl-button mdl-button--colored mdl-button--raised mdl-js-button mdl-js-ripple-effect" id="fancybox-android" disabled>
 							my Android Apps
 						</a>
 						<div class="mdl-layout-spacer"></div>
@@ -161,7 +175,7 @@ Copyright 2015 Arthur Glomb.
 						Began iOS Development with Titanium Appcelerator during my Bachelor Studies. Recently back again to develop iOS Apps with Swift!
 					</div>
 					<div class="mdl-card__actions mdl-card--border">
-						<a class="mdl-button mdl-button--colored mdl-button--raised mdl-js-button mdl-js-ripple-effect" disabled>
+						<a class="mdl-button mdl-button--colored mdl-button--raised mdl-js-button mdl-js-ripple-effect" id="fancybox-ios">
 							my iOS Apps
 						</a>
 						<div class="mdl-layout-spacer"></div>
@@ -170,7 +184,7 @@ Copyright 2015 Arthur Glomb.
 					</div>
 				</div>
 
-				<!-- Karten Test Direkt -->
+				<!-- VisualPlus on BigScreen -->
 
 				<div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-desktop mdl-card ddorfCell mdl-shadow--2dp mdl-cell--hide-phone">
 					<div class="mdl-card__title">
@@ -178,16 +192,15 @@ Copyright 2015 Arthur Glomb.
 					</div>
 					<div class="mdl-card__actions mdl-card--border">
 						<a target="_blank" href="http://www.hs-duesseldorf.de">
-							<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+							<span class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
 								Visit FH-Duesseldorf.de
-							</button>
+							</span>
 						</a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<!-- FOOTER -->
-	</div>
 	<a href="javascript:linkTo_UnCryptMailto('nbjmup;nbjmAbhmpnc/dpn');" id="mailOnPhone" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-color--accent mdl-cell--hide-desktop mdl-cell--hide-tablet"><i class="material-icons" role="presentation" style="color:#616161">email</i></a>
 </body>
 </html>

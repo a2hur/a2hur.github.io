@@ -197,7 +197,7 @@ ul li a i {
 
 .unityCard > .mdl-card__title {
 	height: 176px;
-	background: url('../images/unity-logo-white.png') center no-repeat #00cacd;
+	background: url('../images/unity/unity-logo-white.png') center no-repeat #00cacd;
 	background-size: 90%;
 	color: black;
 }
@@ -218,7 +218,7 @@ ul li a i {
 /*AndroidCard*/
 .androidCard > .mdl-card__title {
 	height: 176px;
-	background: url('../images/Android_Robot_outlined.svg') center no-repeat #A4C639;
+	background: url('../images/android/Android_Robot_outlined.svg') center no-repeat #A4C639;
 	background-size: 90%;
 	color: black;
 	font-weight: bolder;
@@ -240,7 +240,7 @@ ul li a i {
 /*iOS Card*/
 .iOSCard > .mdl-card__title {
 	height: 176px;
-	background: url('../images/swift_logo.png') center no-repeat;
+	background: url('../images/ios/swift_logo.png') center no-repeat;
 	background-size: 40%;
 	background-color: #FB9C44;
 }
