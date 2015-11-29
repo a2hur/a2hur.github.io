@@ -50,18 +50,16 @@ Copyright 2015 Arthur Glomb.
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<!-- jquery -->
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-	<!-- fancybox -->
-	<script type="text/javascript" src="assets/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
-	<link rel="stylesheet" href="assets/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-	<script type="text/javascript" src="assets/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-	<link rel="stylesheet" href="assets/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
-	<script type="text/javascript" src="assets/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
-	<script type="text/javascript" src="assets/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
-
-	<link rel="stylesheet" href="assets/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
-	<script type="text/javascript" src="assets/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+	<!-- photoswipe -->
+	<!-- pswp core css -->
+	<link rel="stylesheet" href="assets/photoswipe/photoswipe.css">
+	<!-- pswp skin css file -->
+	<link rel="stylesheet" href="assets/photoswipe/default-skin/default-skin.css"> 
+	<!-- Core JS File -->
+	<script src="assets/photoswipe/photoswipe.min.js"></script> 
+	<!-- UI JS File -->
+	<script src="assets/photoswipe/photoswipe-ui-default.min.js"></script>
 	<!-- AdmSkripts --> 
-	<script type="text/javascript" src="assets/js/fancybox-portfolio.js"></script>
 	<script type="text/javascript" src="assets/js/getHigh.js"></script>
 	<!-- google analytics -->
 	<script>
@@ -97,110 +95,180 @@ Copyright 2015 Arthur Glomb.
 				<a href="javascript:linkTo_UnCryptMailto('nbjmup;nbjmAbhmpnc/dpn');" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-color--accent fab-top-right mdl-cell--hide-phone"><i class="material-icons" role="presentation" style="color:#616161">email</i>
 					<span class="visuallyhidden">Mail</span>
 				</a>
-					<div class="mdl-card__title card-title">
-						<h4 class="mdl-card__title-text">About</h4>
-					</div>
-					<div class="mdl-card__supporting-text">
-						I'm Arthur. Living in Bremen and currently working on my Masters Degree at the University of Applied Sciences Düsseldorf. I'm looking for a final thesis topic in mobile media. <br>
-						This page is a work in progress. So feel free to contact me on social network or via mail.
-					</div>
-					<div class="mdl-card__actions mdl-card--border">
-						<div class="mdl-layout-spacer"></div>
-						<ul>
-							<li>
-								<a target="_blank" href="https://www.xing.com/profile/Arthur_Glomb">
-									<span class="mdl-button mdl-js-button mdl-button--icon">
-										<i class="fa fa-xing"></i>
-									</span>
-								</a>
-							</li>
-							<li>
+				<div class="mdl-card__title card-title">
+					<h4 class="mdl-card__title-text">About</h4>
+				</div>
+				<div class="mdl-card__supporting-text">
+					I'm Arthur. Living in Bremen and currently working on my Masters Degree at the University of Applied Sciences Düsseldorf. I'm looking for a final thesis topic in mobile media. <br>
+					This page is a work in progress. So feel free to contact me on social network or via mail.
+				</div>
+				<div class="mdl-card__actions mdl-card--border">
+					<div class="mdl-layout-spacer"></div>
+					<ul>
+						<li>
+							<a target="_blank" href="https://www.xing.com/profile/Arthur_Glomb">
 								<span class="mdl-button mdl-js-button mdl-button--icon">
-									<a target="_blank" href="http://www.twitter.com/a2hur">
-										<i class="fa fa-twitter"></i>
-									</a>
+									<i class="fa fa-xing"></i>
 								</span>
-							</li>
-							<li>
-								<span class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored">
-									<a target="_blank" href="https://www.facebook.com/a2hur">
-										<i class="fa fa-facebook"></i>
-									</a>
-								</span>
-							</li>
-
-						</ul>
-					</div>
-				</div>
-
-				<!-- Work Stuff -->
-				<!-- Unity Card-->
-				<div class="unityCard mdl-cell mdl-card mdl-cell--8-col-tablet mdl-shadow--2dp">
-					<div class="mdl-card__title">
-						<h2 class="mdl-card__title-text">Unity3D</h2>
-					</div>
-					<div class="mdl-card__supporting-text" ID="unityST">
-						Creating Apps with Unity to realise Virtual- and Augmented Reality Worlds. Working with Vuforia and Google Cardboard.<br>
-						In App Model Creation with Autodesk Maya and 3DS Max.
-					</div>
-					<div class="mdl-card__actions mdl-card--border">
-						<a class="mdl-button mdl-button--colored mdl-button--raised mdl-js-button mdl-js-ripple-effect" id="fancybox-unity">
-							my Unity Apps
-						</a>
-						<div class="mdl-layout-spacer"></div>
-						<span id="jsIcon" class="devIconClass devicons-javascript_badge"></span>
-						<!-- <div class="mdl-tooltip" for="jsIcon">JavaScript</div> -->
-					</div>
-				</div>
-				<!-- Android Card -->
-				<div class="androidCard mdl-cell mdl-card mdl-cell--4-col-tablet mdl-shadow--2dp">
-					<div class="mdl-card__title"><h2 class="mdl-card__title-text">Android</h2></div>
-					<div class="mdl-card__supporting-text" id="variHeight">Used to implement Android Apps the native way with Java.<br>
-					</div>
-					<div class="mdl-card__actions mdl-card--border">
-						<a class="mdl-button mdl-button--colored mdl-button--raised mdl-js-button mdl-js-ripple-effect" id="fancybox-android" disabled>
-							my Android Apps
-						</a>
-						<div class="mdl-layout-spacer"></div>
-						<span id="javaIcon" class="devIconClass devicons-java"></span>
-						<!-- <div class="mdl-tooltip" for="javaIcon">Java</div> -->
-					</div>
-				</div>
-				<!-- iOS Card -->
-				<div class="iOSCard mdl-cell mdl-card mdl-cell--4-col-tablet mdl-shadow--2dp">
-					<div class="mdl-card__title">
-						<h2 class="mdl-card__title-text">iOS</h2>
-					</div>
-					<div class="mdl-card__supporting-text">
-						Began iOS Development with Titanium Appcelerator during my Bachelor Studies. Recently back again to develop iOS Apps with Swift!
-					</div>
-					<div class="mdl-card__actions mdl-card--border">
-						<a class="mdl-button mdl-button--colored mdl-button--raised mdl-js-button mdl-js-ripple-effect" id="fancybox-ios">
-							my iOS Apps
-						</a>
-						<div class="mdl-layout-spacer"></div>
-						<span id="swiftIcon" class="devIconClass devicons-swift"></span>
-						<!-- <div class="mdl-tooltip" for="swiftIcon">Swift</div> -->
-					</div>
-				</div>
-
-				<!-- VisualPlus on BigScreen -->
-
-				<div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-desktop mdl-card ddorfCell mdl-shadow--2dp mdl-cell--hide-phone">
-					<div class="mdl-card__title">
-						<h2 class="mdl-card__title-text">FH Düsseldorf</h2>
-					</div>
-					<div class="mdl-card__actions mdl-card--border">
-						<a target="_blank" href="http://www.hs-duesseldorf.de">
-							<span class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
-								Visit FH-Duesseldorf.de
+							</a>
+						</li>
+						<li>
+							<span class="mdl-button mdl-js-button mdl-button--icon">
+								<a target="_blank" href="http://www.twitter.com/a2hur">
+									<i class="fa fa-twitter"></i>
+								</a>
 							</span>
-						</a>
-					</div>
+						</li>
+						<li>
+							<span class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored">
+								<a target="_blank" href="https://www.facebook.com/a2hur">
+									<i class="fa fa-facebook"></i>
+								</a>
+							</span>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+
+			<!-- Work Stuff -->
+			<!-- Unity Card-->
+			<div class="unityCard mdl-cell mdl-card mdl-cell--8-col-tablet mdl-shadow--2dp">
+				<div class="mdl-card__title">
+					<h2 class="mdl-card__title-text">Unity3D</h2>
+				</div>
+				<div class="mdl-card__supporting-text" ID="unityST">
+					Creating Apps with Unity to realise Virtual- and Augmented Reality Worlds. Working with Vuforia and Google Cardboard.<br>
+					In App Model Creation with Autodesk Maya and 3DS Max.
+				</div>
+				<div class="mdl-card__actions mdl-card--border">
+					<button class="mdl-button mdl-button--colored mdl-button--raised mdl-js-button mdl-js-ripple-effect" id="pswp_unity">
+						my Unity Apps
+					</button>
+					<div class="mdl-layout-spacer"></div>
+					<span id="jsIcon" class="devIconClass devicons-javascript_badge"></span>
+					<!-- <div class="mdl-tooltip" for="jsIcon">JavaScript</div> -->
+				</div>
+			</div>
+			<!-- Android Card -->
+			<div class="androidCard mdl-cell mdl-card mdl-cell--4-col-tablet mdl-shadow--2dp">
+				<div class="mdl-card__title"><h2 class="mdl-card__title-text">Android</h2></div>
+				<div class="mdl-card__supporting-text" id="variHeight">Used to implement Android Apps the native way with Java.<br>
+				</div>
+				<div class="mdl-card__actions mdl-card--border">
+					<button class="mdl-button mdl-button--colored mdl-button--raised mdl-js-button mdl-js-ripple-effect" disabled>
+						my Android Apps
+					</button>
+					<div class="mdl-layout-spacer"></div>
+					<span id="javaIcon" class="devIconClass devicons-java"></span>
+					<!-- <div class="mdl-tooltip" for="javaIcon">Java</div> -->
+				</div>
+			</div>
+			<!-- iOS Card -->
+			<div class="iOSCard mdl-cell mdl-card mdl-cell--4-col-tablet mdl-shadow--2dp">
+				<div class="mdl-card__title">
+					<h2 class="mdl-card__title-text">iOS</h2>
+				</div>
+				<div class="mdl-card__supporting-text">
+					Began iOS Development with Titanium Appcelerator during my Bachelor Studies. Recently back again to develop iOS Apps with Swift!
+				</div>
+				<div class="mdl-card__actions mdl-card--border">
+					<button class="mdl-button mdl-button--colored mdl-button--raised mdl-js-button mdl-js-ripple-effect" id="pswp_ios">
+						my iOS Apps
+					</button>
+					<div class="mdl-layout-spacer"></div>
+					<span id="swiftIcon" class="devIconClass devicons-swift"></span>
+					<!-- <div class="mdl-tooltip" for="swiftIcon">Swift</div> -->
+				</div>
+			</div>
+
+			<!-- VisualPlus on BigScreen -->
+
+			<div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-desktop mdl-card ddorfCell mdl-shadow--2dp mdl-cell--hide-phone">
+				<div class="mdl-card__title">
+					<h2 class="mdl-card__title-text">FH Düsseldorf</h2>
+				</div>
+				<div class="mdl-card__actions mdl-card--border">
+					<a target="_blank" href="http://www.hs-duesseldorf.de">
+						<span class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+							Visit FH-Duesseldorf.de
+						</span>
+					</a>
 				</div>
 			</div>
 		</div>
-		<!-- FOOTER -->
+	</div>
+	<!-- FOOTER -->
 	<a href="javascript:linkTo_UnCryptMailto('nbjmup;nbjmAbhmpnc/dpn');" id="mailOnPhone" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-color--accent mdl-cell--hide-desktop mdl-cell--hide-tablet"><i class="material-icons" role="presentation" style="color:#616161">email</i></a>
+	
+	<!-- Photoswipe Content -->
+	<!-- Root element of PhotoSwipe. Must have class pswp. -->
+	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+    It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+            	<div class="pswp__item"></div>
+            	<div class="pswp__item"></div>
+            	<div class="pswp__item"></div>
+            </div>
+
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+
+            	<div class="pswp__top-bar">
+
+            		<!--  Controls are self-explanatory. Order can be changed. -->
+
+            		<div class="pswp__counter"></div>
+
+            		<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+            		<button class="pswp__button pswp__button--share" title="Share"></button>
+
+            		<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+            		<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+            		<!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+            		<!-- element will get class pswp__preloader- -active when preloader is running -->
+            		<div class="pswp__preloader">
+            			<div class="pswp__preloader__icn">
+            				<div class="pswp__preloader__cut">
+            					<div class="pswp__preloader__donut"></div>
+            				</div>
+            			</div>
+            		</div>
+            	</div>
+
+            	<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+            		<div class="pswp__share-tooltip"></div> 
+            	</div>
+
+            	<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            	</button>
+
+            	<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            	</button>
+
+            	<div class="pswp__caption">
+            		<div class="pswp__caption__center"></div>
+            	</div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="assets/js/photoswipe-portfolio.js"></script>
+    <!-- END of pswp content -->
 </body>
 </html>
