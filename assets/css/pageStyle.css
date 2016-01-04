@@ -181,9 +181,7 @@ ul li a i {
 	background: url('../images/potrait_big.jpg') center / cover;
 }
 
-.card-image.mdl-card:hover {
-	background: url('../images/potrait_big_hovr.jpg') center / cover;
-}
+
 
 .card-image > .mdl-card__actions {
 	height: 52px;
