@@ -8,27 +8,6 @@
 	color: white;
 }
 
-.bremenCell > .mdl-card__title{
-	color: #fff;
-	background: url('../images/hbNeustadtBHF.jpg') center no-repeat;
-	height:250px;
-}
-
-.ddorfCell > .mdl-card__title{
-	color: #000;
-	background: url('../images/fhd.jpg') no-repeat;
-	background-position: 10% 50%;
-	height:150px;
-}
-.ddorfCell > .mdl-card__actions {
-	height: 60px;
-	padding: 10px;
-	display: flex;
-	box-sizing: border-box;
-	align-items: center;
-	font-size: 2rem;
-}
-
 #mailOnPhone {
 	position: fixed;
 	display: block;
@@ -196,71 +175,4 @@ ul li a i {
 
 .full-width {
     width: 100%;
-}
-
-/*UnityCard*/
-.unityCard.mdl-card {
-}
-
-.unityCard > .mdl-card__title {
-	height: 176px;
-	background: url('../images/unity/unity-logo-white.png') center no-repeat #00cacd;
-	background-size: 90%;
-	color: black;
-}
-.unityCard > .mdl-card__supporting-text {
-	height: 90px;
-}
-
-.unityCard > .mdl-card__actions {
-	height: 60px;
-	padding: 10px;
-	display: flex;
-	box-sizing: border-box;
-	align-items: center;
-	font-size: 1.5rem
-}
-
-
-/*AndroidCard*/
-.androidCard > .mdl-card__title {
-	height: 176px;
-	background: url('../images/android/Android_Robot_outlined.svg') center no-repeat #A4C639;
-	background-size: 90%;
-	color: black;
-	font-weight: bolder;
-}
-
-.androidCard > .mdl-card__supporting-text {
-	height: 90px;
-}
-
-.androidCard > .mdl-card__actions {
-	height: 60px;
-	padding: 10px;
-	display: flex;
-	box-sizing: border-box;
-	align-items: center;
-	font-size: 2rem;
-}
-
-/*iOS Card*/
-.iOSCard > .mdl-card__title {
-	height: 176px;
-	background: url('../images/ios/swift_logo.png') center no-repeat;
-	background-size: 40%;
-	background-color: #FB9C44;
-}
-
-.iOSCard > .mdl-card__supporting-text {
-	height: 90px;
-}
-
-.iOSCard > .mdl-card__actions {
-	height: 60px;
-	padding: 10px;
-	display: flex;
-	box-sizing: border-box;
-	align-items: center;
-	font-size: 2rem;
 }
