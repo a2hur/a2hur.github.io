@@ -145,11 +145,11 @@ ul li a i {
 
 /*Cards*/
 .contactCard {
-	width: 45%;
 	height: auto;
 	z-index: 2;
 	overflow: visible;
 }
+
 
 .contactCard > .mdl-card__actions {
 	height: 60px;
@@ -192,6 +192,10 @@ ul li a i {
 	color: #fff;
 	font-size: 14px;
 	font-weight: 500;
+}
+
+.full-width {
+    width: 100%;
 }
 
 /*UnityCard*/
