@@ -8976,13 +8976,13 @@ q=b.a
 u=s/r>q/o?new P.Q(q*r/o,r):new P.Q(s,o*s/q)
 t=b
 break
-case C.lk:s=c.a
+case C.ih:s=c.a
 r=c.b
 q=b.a
 t=s/r>q/o?new P.Q(q,q*r/s):new P.Q(o*s/r,o)
 u=c
 break
-case C.ih:o=b.a
+case C.lk:o=b.a
 s=c.b
 r=c.a
 s=o*s/r
@@ -35289,16 +35289,16 @@ $aa4:function(){return[F.nw]}}
 F.zN.prototype={
 K:function(a){return new A.zL(new F.zO(),null)}}
 F.zO.prototype={
-$2:function(a,b){if(b.b<480)return new F.Ay(null)
+$2:function(a,b){if(b.b<600)return new F.Ay(null)
 else return new F.GY(null)}}
 F.GY.prototype={
-K:function(a){var u,t=null,s=M.cA(t,new F.m_(400,t),t,t,t,t,t,t,C.nx,t,t),r=[N.br],q=H.b([],r)
+K:function(a){var u,t=null,s=M.cA(t,new F.m_(300,t),t,t,t,t,t,t,C.nx,t,t),r=[N.br],q=H.b([],r)
 q.push(L.fJ("arthur glomb",A.cO(t,t,t,t,t,t,t,t,t,t,t,62,t,t,t,t,!0,t,t,t,t,t,t),C.d6))
 for(u=0;u<5;++u)q.push(L.fJ(C.fC[u],A.cO(t,t,t,t,t,t,t,t,t,t,t,20,t,t,t,t,!0,t,t,t,t,t,t),t))
 return Q.Ee(!0,T.E5(H.b([s,M.cA(t,T.Nd(q,C.dn,C.cZ),t,t,t,t,t,t,t,t,t)],r),C.b1,C.cZ),!0)}}
 F.Ay.prototype={
 K:function(a){var u=null
-return Q.Ee(!0,new T.j1(C.F,u,u,T.Nd(H.b([M.cA(u,new F.m_(250,u),u,u,u,u,u,u,new V.ai(30,30,30,30),u,u),M.cA(u,L.fJ("arthur glomb",A.cO(u,u,u,u,u,u,u,u,u,u,u,50,u,u,u,u,!0,u,u,u,u,u,u),C.d6),u,u,u,u,u,u,new V.ai(30,30,30,30),u,u),T.Nk(new F.m4(u))],[N.br]),C.b1,C.cZ),u),!0)}}
+return Q.Ee(!0,new T.j1(C.F,u,u,T.Nd(H.b([M.cA(u,new F.m_(200,u),u,u,u,u,u,u,new V.ai(30,30,30,30),u,u),M.cA(u,L.fJ("arthur glomb",A.cO(u,u,u,u,u,u,u,u,u,u,u,50,u,u,u,u,!0,u,u,u,u,u,u),C.d6),u,u,u,u,u,u,new V.ai(30,30,30,30),u,u),T.Nk(new F.m4(u))],[N.br]),C.b1,C.cZ),u),!0)}}
 F.m_.prototype={
 K:function(a){var u=null,t=F.bu(a,!1).d===C.N&&!0?"assets/images/IMG_BW.jpg":"assets/images/IMG_COL.jpg",s=this.c
 return M.cA(u,u,u,u,S.mp(u,u,u,u,u,new X.w1(new L.ul(t),C.ih),C.aq),u,s,u,u,u,s)}}
@@ -36471,8 +36471,8 @@ C.df=new S.ag(0,1/0,0,1/0)
 C.li=new S.ag(48,1/0,48,1/0)
 C.lj=new U.du("BoxFit.fill")
 C.dg=new U.du("BoxFit.contain")
-C.lk=new U.du("BoxFit.cover")
-C.ih=new U.du("BoxFit.fitWidth")
+C.ih=new U.du("BoxFit.cover")
+C.lk=new U.du("BoxFit.fitWidth")
 C.ll=new U.du("BoxFit.fitHeight")
 C.lm=new U.du("BoxFit.none")
 C.ii=new U.du("BoxFit.scaleDown")
