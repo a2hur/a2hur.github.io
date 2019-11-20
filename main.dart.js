@@ -35289,7 +35289,7 @@ $aa4:function(){return[F.nw]}}
 F.zN.prototype={
 K:function(a){return new A.zL(new F.zO(),null)}}
 F.zO.prototype={
-$2:function(a,b){if(b.b<720)return new F.Ay(null)
+$2:function(a,b){if(b.b<480)return new F.Ay(null)
 else return new F.GY(null)}}
 F.GY.prototype={
 K:function(a){var u,t=null,s=M.cA(t,new F.m_(400,t),t,t,t,t,t,t,C.nx,t,t),r=[N.br],q=H.b([],r)
