@@ -35316,7 +35316,7 @@ F.yI.prototype={
 $1:function(a){var u=null,t=[N.bq]
 return M.cy(u,T.Na(H.b([T.xi(new T.fx(new V.ai(16,16,16,16),L.fM("some guy from bremen.\ncode and design for mobile and human.\nget in touch via mail on social networks.",u,u),u)),new T.e3(C.F,u,u,L.fM("... but in first place, this is a flutter playground \ud83c\udfa2",A.cM(u,u,u,u,u,u,u,u,u,u,u,12,u,u,u,u,!0,u,u,u,u,u,u),u),u),T.E0(H.b([L.fM("\xa9 aglomb.com 2019. made with",A.cM(u,u,u,u,u,u,u,u,u,u,u,10,u,u,u,u,!0,u,u,u,u,u,u),u),new T.df(u,15,new X.xF(u),u)],t),C.b0,C.d_)],t),C.b0,C.eM),u,u,u,u,200,u,u,u,u)}}
 F.LS.prototype={
-$0:function(){return F.lR("mailto:info@aglomb.com?subject=THIS&body=HEY%20ARTHUR")},
+$0:function(){return F.lR("mailto:info@aglomb.com?subject=Website%20Contact")},
 $C:"$0",
 $R:0,
 $S:1}
